@@ -125,8 +125,8 @@ CREATE TABLE IF NOT EXISTS `petrostations` (
   `id` int(10) NOT NULL AUTO_INCREMENT,
   `brandid` int(10) NOT NULL,
   `stationname` varchar(50) NOT NULL,
-  `lat` varchar(40) NOT NULL,
   `long` varchar(40) NOT NULL,
+  `lat` varchar(40) NOT NULL,
   `locationid` int(10) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=45 ;
@@ -135,7 +135,7 @@ CREATE TABLE IF NOT EXISTS `petrostations` (
 -- Dumping data for table `petrostations`
 --
 
-INSERT INTO `petrostations` (`id`, `brandid`, `stationname`, `lat`,`long`, `locationid`) VALUES
+INSERT INTO `petrostations` (`id`, `brandid`, `stationname`, `long`,`lat`, `locationid`) VALUES
 (1, 1, 'Ngong Road', '-1.2988654','36.7594331', 30),
 (2, 1, 'Lower Kabete', '-1.2986523','36.6896686', 30),
 (3, 1, 'Opposite Garden City,Thika Road', '-1.2986523','36.6896686', 30),
